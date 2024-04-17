@@ -32,3 +32,26 @@ os.system('cls')
 
 print("Enter in the coefficients for a quadratic equation in the format:")
 print("  ax^2 + bx + c = 0")
+try:
+  print("\ninput value 'a'")
+  a = input()
+  a = float(a)
+
+  print("\ninput value 'b'")
+  b = input()
+  b = float(b)
+
+  print("\ninput value 'c'")
+  c = input()
+  c = float(c)
+
+  x = (-(b) + (b**2 - 4*a*c)**0.5) / 2 * a
+  x = float(x)
+  y = (-(b) - (b**2 - 4*a*c)**0.5) / 2 * a
+  y = float(y)
+  os.system('cls')
+  print(f"\n\n the roots are {x} and {y}")
+  input()
+except:
+  print("you entered an invalid variable")
+  input()
